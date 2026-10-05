@@ -10,7 +10,7 @@ export default function App() {
       const url = "https://raw.githubusercontent.com/cederdorff/race/refs/heads/master/data/users.json";
       const response = await fetch(url);
       const data = await response.json();
-      console.log(data);
+      setUsers(data);
     }
     fetchUsers();
   }, []);
