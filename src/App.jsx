@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import User from "./components/User";
+import UserList from "./components/UserList";
 
 export default function App() {
   const users = [
@@ -36,17 +36,7 @@ export default function App() {
   return (
     <main className="app">
       <Header />
-      <section className="grid">
-        {users.map(user => (
-          <User
-            key={user.id}
-            name={user.name}
-            title={user.title}
-            mail={user.mail}
-            image={user.image}
-          />
-        ))}
-      </section>
+      <UserList users={users} />
     </main>
   );
 }
