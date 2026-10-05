@@ -1,10 +1,9 @@
-export default function App() {
-  const name = "Rasmus";
+import Header from "./components/Header";
 
+export default function App() {
   return (
     <main className="app">
-      <h1>Users</h1>
-      <h2>Hello, {name}</h2>
+      <Header />
     </main>
   );
 }
